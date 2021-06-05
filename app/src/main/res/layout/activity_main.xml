@@ -23,7 +23,9 @@
             android:layout_height="wrap_content"
             android:layout_gravity="right|bottom"
             android:layout_margin="10dp"
+            android:onClick="deleteall"
             android:src="@drawable/ic_baseline_delete_24"
+            android:id="@+id/delete"
             android:backgroundTint="#F88787"/>
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 

@@ -7,7 +7,7 @@ import androidx.room.Entity;
 import androidx.room.Room;
 import androidx.room.RoomDatabase;
 
-@Database(entities=CountryModelClass.class,version = 1)
+@Database(entities=Country.class,version = 1)
 public abstract class CountryRoom extends RoomDatabase {
 
     private static CountryRoom instance;

@@ -8,6 +8,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:cardCornerRadius="8dp"
+        android:id="@+id/cardview"
         app:cardBackgroundColor="#F8FBF3">
 
        <ImageView

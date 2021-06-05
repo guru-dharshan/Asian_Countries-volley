@@ -11,11 +11,11 @@ import java.util.List;
 public interface CountryDao {
 
     @Insert
-    public void insert(CountryModelClass countryModelClass);
+    public void insert(Country country);
 
-    @Query("SELECT * FROM countrymodelclass")
-    public LiveData<List<CountryModelClass>> countrylist();
+    @Query("SELECT * FROM Country")
+    public LiveData<List<Country>> countrylist();
 
-    @Query("DELETE FROM countrymodelclass")
+    @Query("DELETE FROM Country")
     public void deleteall();
 }
