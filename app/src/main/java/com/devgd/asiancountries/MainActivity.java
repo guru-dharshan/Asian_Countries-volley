@@ -2,6 +2,7 @@ package com.devgd.asiancountries;
 
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -34,6 +35,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
+
+
+
+
     List<Country> countrylist;
     RecyclerView countryRecyclerView;
     CountryViewModel countryViewModel;
@@ -45,6 +50,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+
         //setting views
         countryRecyclerView=findViewById(R.id.recyclerview);
         deletebutton=findViewById(R.id.delete);
